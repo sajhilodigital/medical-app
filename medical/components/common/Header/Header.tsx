@@ -5,6 +5,7 @@ import { PiPhoneCall } from "react-icons/pi";
 import {Navbar} from "./Navbar";
 
 function Header() {
+
   const infoItems = [
     {
       title: "Emergency",
@@ -24,9 +25,9 @@ function Header() {
   ];
 
   return (
-    <header>
-      <div className="flex max-w-7xl mx-auto justify-between">
-        <div className="py-5">
+    <header className="sticky top-0 z-100 bg-background md:px-0">
+      <div className="flex max-w-7xl mx-auto justify-between px-5">
+        <div className="py-5 hidden md:block">
           <span className="text-primary-blue text-4xl font-yeseva font-bold">
             MED
           </span>
@@ -34,7 +35,7 @@ function Header() {
             ICAL
           </span>
         </div>
-        <div className="flex gap-6">
+        <div className="flex gap-6 flex-wrap  justify-center p-1">
           {infoItems.map((val, i) => (
             <div key={i} className="flex items-center gap-2 ">
               <div>{val.icon}</div>
@@ -42,7 +43,7 @@ function Header() {
                 <p className="uppercase font-work-sans text-primary-blue text-base font-medium">
                   {val.title}
                 </p>
-                <p className="text-secondary-blue text-base font-medium">
+                <p className="text-secondary-blue font-work-sans text-base font-medium">
                   {val.value}
                 </p>
               </div>

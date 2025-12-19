@@ -54,8 +54,8 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: oklch(99.552% 0.00215 200.022);
+  --foreground: oklch(14.479% 0.00002 271.152);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -89,7 +89,7 @@
   --secondary-color: rgb(21, 158, 236);
   --accent-blue: #BFD2F8;
   --font-work-sans: "Work Sans", sans-serif;
-  --font-yeseva: "Yeseva One", serif;
+  --font-yeseva: "Yeseva One";
 }
 
 .dark {
@@ -135,3 +135,4 @@
     @apply bg-background text-foreground;
   }
 }
+

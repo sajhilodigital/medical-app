@@ -1,7 +1,21 @@
+import Appointment from "@/components/home/Appointment";
+import Banner from "@/components/common/Banner";
+import Herosection from "@/components/home/Herosection";
+import Welcome from "@/components/home/Welcome";
+import Bannerpartition from "@/components/common/Bannerpartition";
+
 export default function Home() {
   return (
-    <div className="text-primry flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      Home
+    <div className="">
+      <Herosection />
+      <section className=" absolute w-full bottom-0 z-50 hidden md:block">
+        <Appointment />
+      </section>
+      <Welcome />
+      <section className="max-w-7xl mx-auto">
+        <Banner />
+        <Bannerpartition/>
+      </section>
     </div>
   );
 }

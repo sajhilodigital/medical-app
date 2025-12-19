@@ -6,13 +6,13 @@ import { BsFillSendFill } from "react-icons/bs";
 
 function Footer() {
   return (
-    <footer className="bg-primary-blue">
+    <footer className="bg-primary-blue px-5">
       <div className="max-w-7xl py-16 mx-auto">
-        <div className="grid grid-cols-4 py-10  gap-14">
+        <div className="grid grid-cols-1 md:grid-cols-4 py-10  gap-14">
           <div>
-            <h1 className="text-4xl font-bold text-accent-blue font-yeseva  uppercase">
+            <Link href={"/"} className="text-4xl font-bold text-accent-blue font-yeseva  uppercase">
               Medical
-            </h1>
+            </Link >
             <p className="text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
             </p>
