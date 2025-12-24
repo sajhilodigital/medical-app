@@ -13,9 +13,7 @@ export default function Home() {
   return (
     <div className="">
       <Herosection />
-      <section className=" absolute w-full bottom-0 z-50 hidden md:block">
-        <Appointment />
-      </section>
+      
       <Welcome />
       <section className="max-w-7xl mx-auto">
         <Banner />
