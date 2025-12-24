@@ -1,5 +1,6 @@
 import Banner from "@/components/common/Banner";
 import Bannerpartition from "@/components/common/Bannerpartition";
+import Contact from "@/components/common/Contact";
 import React from "react";
 
 function page() {
@@ -18,6 +19,7 @@ function page() {
       </Banner>
     </div>
       <Bannerpartition/>
+      <Contact/>
     </div>
   );
 }

@@ -10,7 +10,7 @@ function Footer() {
       <div className="max-w-7xl py-16 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 py-10  gap-14">
           <div>
-            <Link href={"/"} className="text-4xl font-bold text-accent-blue font-yeseva  uppercase">
+            <Link href={"/"} className="text-3xl md:text-4xl font-bold text-accent-blue font-yeseva  uppercase">
               Medical
             </Link >
             <p className="text-white">
