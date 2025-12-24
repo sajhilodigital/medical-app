@@ -4,7 +4,7 @@ import Appointment from "./Appointment";
 
 function Herosection() {
   return (
-    <section>
+    <section className="relative">
       <section className="bg-[url(/images/herobg.jpg)] bg-cover bg-center overflow-hidden relative h-150 ">
         <div className="absolute w-full h-full bg-stone-50/50">
           <div className="absolute w-sm h-96 rounded-full bg-secondary-blue/50 -left-30 -top-60"></div>
@@ -31,7 +31,7 @@ function Herosection() {
           </div>
         </div>
       </section>
-      <section className=" absolute w-full -bottom-4 z-50 hidden md:block">
+      <section className=" absolute w-full -bottom-10 z-50 hidden md:block">
         <Appointment />
       </section>
     </section>
