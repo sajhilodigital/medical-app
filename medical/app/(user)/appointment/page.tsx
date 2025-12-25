@@ -1,7 +1,9 @@
 import BookAppointmentForm from "@/components/appointment/BookAppointmentForm";
+import ScheduleHours from "@/components/appointment/Schedule";
 import Banner from "@/components/common/Banner";
 import Bannerpartition from "@/components/common/Bannerpartition";
-import Contact from "@/components/common/Contact";
+import Contact from "@/components/common/ContactInfo";
+import Map from "@/components/contact/Map";
 
 import React from "react";
 
@@ -25,9 +27,9 @@ function page() {
         </Banner>
       </div>
       <Bannerpartition />
-      <div className="pt-16 grid grid-cols-2 max-w-7xl mx-auto">
+      <div className="pt-16 grid grid-cols-[1.2fr_1fr] gap-15 max-w-7xl mx-auto">
         <div>
-          <div className="pb-16">          
+          <div className="pb-16">
             <h2 className="font-yeseva font-bold text-4xl text-primary-blue">
               Book an appointment
             </h2>
@@ -40,9 +42,10 @@ function page() {
           <BookAppointmentForm />
         </div>
         <div>
-
+          <ScheduleHours />
         </div>
       </div>
+      <Map />
       <Contact />
     </div>
   );
