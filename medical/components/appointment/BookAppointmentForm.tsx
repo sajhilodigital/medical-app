@@ -39,7 +39,7 @@ function BookAppointmentForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   return (
-    <form action="" className="bg-primary-blue" onSubmit={handleSubmit}>
+    <form action="" className="bg-primary-blue rounded-sm overflow-hidden" onSubmit={handleSubmit}>
       <div className="grid grid-cols-2">
         <input
           type="text"
@@ -56,7 +56,7 @@ function BookAppointmentForm() {
           value={formData.gender}
           className="border py-3 px-3 text-white outline-none placeholder:text-white text-base font-work-sans font-light bg-primary-blue "
         >
-          <option value="" disabled selected>
+          <option value="" disabled  >
             Gender
           </option>
           <option value="male">Male</option>
@@ -89,12 +89,12 @@ function BookAppointmentForm() {
           value={formData.date}
           className="border py-3 px-3 text-white outline-none placeholder:text-white text-base font-work-sans font-light bg-primary-blue "
         >
-          <option value="" disabled selected>
+          <option value="" disabled  >
             Date
           </option>
-          <option value="2025 - 12 - 24">2025 - 12 - 24</option>
-          <option value="2025 - 12 - 24">2025 - 12 - 24</option>
-          <option value="2025 - 12 - 24">2025 - 12 - 24</option>
+          <option value="2025-12-24">2025 - 12 - 24</option>
+          <option value="2025-12-24">2025 - 12 - 24</option>
+          <option value="2025-12-24">2025 - 12 - 24</option>
         </select>
         <select
           title="time"
@@ -103,12 +103,12 @@ function BookAppointmentForm() {
           value={formData.time}
           className="border py-3 px-3 text-white outline-none placeholder:text-white text-base font-work-sans font-light bg-primary-blue "
         >
-          <option value="" disabled selected>
+          <option value="" disabled  >
             Time
           </option>
-          <option value="10:00 AM">10:00 AM</option>
-          <option value="1:00 PM">1:00 PM</option>
-          <option value="4:00 PM">4:00 PM</option>
+          <option value="10:00AM">10:00 AM</option>
+          <option value="1:00PM">1:00 PM</option>
+          <option value="4:00PM">4:00 PM</option>
         </select>
       </div>
       <div className="grid grid-cols-2">
@@ -119,12 +119,12 @@ function BookAppointmentForm() {
           value={formData.doctor}
           className="border py-3 px-3 text-white outline-none placeholder:text-white text-base font-work-sans font-light bg-primary-blue "
         >
-          <option value="" disabled selected>
+          <option value="" disabled  >
             Doctor
           </option>
-          <option value="Dr. Ram">Dr. Ram</option>
-          <option value="Dr. Krishna">Dr. Krishna</option>
-          <option value="Dr. Mahadev">Dr. Mahadev</option>
+          <option value="Dr.Ram">Dr. Ram</option>
+          <option value="Dr.Krishna">Dr. Krishna</option>
+          <option value="Dr.Mahadev">Dr. Mahadev</option>
         </select>
         <select
           title="department"
@@ -133,7 +133,7 @@ function BookAppointmentForm() {
           value={formData.department}
           className="border py-3 px-3 text-white outline-none placeholder:text-white text-base font-work-sans font-light bg-primary-blue "
         >
-          <option value="" disabled selected>
+          <option value="" disabled  >
             Department
           </option>
           <option value="Neurology">Neurology</option>
@@ -152,13 +152,13 @@ function BookAppointmentForm() {
       </div>
       <textarea
         name="message"
-        rows={5}
+        rows={6}
         placeholder="Message"
         onChange={handleChange}
         value={formData.message}
-        className="w-full border py-3 px-4 text-white outline-none placeholder:text-white text-base font-work-sans font-light"
+        className="w-full py-3 px-4 text-white outline-none placeholder:text-white text-base font-work-sans font-light"
       ></textarea>
-      <Button className="w-full bg-accent-blue text-primary-blue rounded-none hover:bg-secondary-blue hover:text-accent-blue cursor-pointer">
+      <Button className="w-full bg-accent-blue py-5 text-primary-blue rounded-none text-base hover:bg-secondary-blue hover:text-white font-work-sans cursor-pointer">
         Submit
       </Button>
     </form>
