@@ -7,23 +7,24 @@ import Service from "@/components/home/Service";
 import Specialties from "@/components/home/Specialties";
 import Bookappointment from "@/components/home/Bookappointment";
 import OurDoctor from "@/components/home/OurDoctor";
-import Contact from "@/components/common/Contact";
+import Contact from "@/components/home/Contact";
+
 
 export default function Home() {
   return (
     <div className="">
       <Herosection />
-      
+
       <Welcome />
       <section className="max-w-7xl mx-auto">
         <Banner />
-        <Bannerpartition/>
+        <Bannerpartition />
       </section>
-      <Service/>
-      <Specialties/>
-      <Bookappointment/>
-      <OurDoctor/>
-      <Contact/>
+      <Service />
+      <Specialties />
+      <Bookappointment />
+      <OurDoctor />
+   <Contact/>
     </div>
   );
 }
