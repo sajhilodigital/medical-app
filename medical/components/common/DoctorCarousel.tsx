@@ -90,7 +90,7 @@ export default function DoctorCarousel() {
             style={{ width: "max-content" }}
           >
             {[...doctors, ...doctors].map((doc, i) => (
-              <DoctorCard img={doc.image} name={doc.name} />
+              <DoctorCard key={i} img={doc.image} name={doc.name} />
             ))}
           </div>
         </div>
