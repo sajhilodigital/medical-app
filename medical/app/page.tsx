@@ -8,7 +8,7 @@ import Specialties from "@/components/home/Specialties";
 import Bookappointment from "@/components/home/Bookappointment";
 import OurDoctor from "@/components/home/OurDoctor";
 import Contact from "@/components/home/Contact";
-
+import NewsCarouselGrid from "@/components/common/News";
 
 export default function Home() {
   return (
@@ -24,7 +24,8 @@ export default function Home() {
       <Specialties />
       <Bookappointment />
       <OurDoctor />
-   <Contact/>
+      <NewsCarouselGrid/>
+      <Contact />
     </div>
   );
 }

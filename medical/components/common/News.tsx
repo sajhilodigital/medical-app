@@ -105,7 +105,7 @@ export default function NewsCarouselGrid() {
 
       {/* Carousel */}
       <div className="relative max-w-7xl mx-auto flex items-center gap-4">
-        <button onClick={handlePrev} className="z-10 h-10 w-10 bg-[#159EEC] text-white">‹</button>
+        <button onClick={handlePrev} className="z-10 h-10 w-10 bg-primary-blue text-accent-blue text-xl cursor-pointer">‹</button>
 
         <div className="overflow-hidden w-full py-8 px-3">
           <div
@@ -114,7 +114,7 @@ export default function NewsCarouselGrid() {
             style={{ width: `${(CARD_WIDTH + GAP) * newsData.length}px` }}
           >
             {[...newsData, ...newsData].map((item, i) => (
-              <div key={i} className="flex w-140 bg-white rounded-lg h-40 shadow-md border items-center border-blue-200 overflow-hidden">
+              <div key={i} className="flex w-140 bg-white rounded-lg h-40 shadow-sm items-center overflow-hidden">
                 <div className="w-1/3 h-full">
                   <img src={item.image} alt="News" className="h-full object-cover shrink-0" />
                 </div>
@@ -137,7 +137,7 @@ export default function NewsCarouselGrid() {
           </div>
         </div>
 
-        <button onClick={handleNext} className="z-10 h-10 w-10 bg-[#159EEC] text-white">›</button>
+        <button onClick={handleNext} className="z-10 h-10 w-10 bg-primary-blue text-accent-blue text-xl cursor-pointer">›</button>
       </div>
 
       {/* Dots */}
@@ -147,7 +147,7 @@ export default function NewsCarouselGrid() {
             key={i}
             onClick={() => goToSlide(i)}
             className={`h-3 w-3 rounded-full transition-all ${
-              currentIndex === i ? 'bg-[#159EEC] scale-110' : 'bg-gray-300'
+              currentIndex === i ? 'bg-primary-blue scale-110' : 'bg-accent-blue'
             }`}
           />
         ))}

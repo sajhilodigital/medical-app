@@ -1,5 +1,7 @@
 import Banner from "@/components/common/Banner";
 import Bannerpartition from "@/components/common/Bannerpartition";
+import NewsCarouselGrid from "@/components/common/News";
+import Testimonial from "@/components/common/Testimonials";
 import DoctorCard from "@/components/doctor/DoctorCard";
 import Contact from "@/components/home/Contact";
 
@@ -31,12 +33,14 @@ function page() {
         </Banner>
       </div>
       <Bannerpartition />
-      <div className="grid grid-cols-3 gap-10 max-w-7xl mx-auto pt-16">
+      <div className="grid grid-cols-3 gap-10 max-w-7xl mx-auto py-16">
         {doctors.map((doc, i) => (
           <DoctorCard img={doc.image} name={doc.name} key={i} />
         ))}
       </div>
-      <Contact/>
+      <Testimonial/>
+      <NewsCarouselGrid/>
+      <Contact />
     </div>
   );
 }
