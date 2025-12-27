@@ -1,7 +1,12 @@
+import React from "react";
+import About from "@/components/about/About";
 import Banner from "@/components/common/Banner";
 import Bannerpartition from "@/components/common/Bannerpartition";
+import Testimonials from "@/components/common/Testimonials";
+import News from "@/components/common/News";
 import Contact from "@/components/home/Contact";
 import OurDoctor from "@/components/home/OurDoctor";
+
 
 function page() {
   return (
@@ -23,7 +28,10 @@ function page() {
         </Banner>
       </div>
       <Bannerpartition />
+      <About />
+      <Testimonials/>
       <OurDoctor />
+      <News />
       <Contact />
     </div>
   );
