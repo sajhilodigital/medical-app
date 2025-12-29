@@ -24,7 +24,7 @@ export default function Home() {
       <Specialties />
       <Bookappointment />
       <OurDoctor />
-      <NewsCarouselGrid/>
+      <NewsCarouselGrid />
       <Contact />
     </div>
   );
